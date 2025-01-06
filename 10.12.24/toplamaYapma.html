@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function topla(){
+    document.getElementById("kutu1").innerHTML=6+15;    
+    }
+    function mesaj(){
+        alert("Merhaba Dünya");
+    }
+    function topla2(){
+        let a,b,c;
+        a=5;
+        b=10;
+        c=a+b;
+        document.getElementById("kutu1").innerHTML=c;
+        alert(c);
+    }
+    function topla3(){
+         sayi1,sayi2,sonuc;
+        sayi1=document.getElementById("sayi1").value;
+        sayi2=document.getElementById("sayi2").value;
+        sonuc=Number(sayi1)+Number (sayi2);
+        document.getElementById("sonuc").innerHTML=sonuc;
+    }
+    function cikar(){
+        sayi1,sayi2,sonuc;
+        sayi1=document.getElementById("sayi1").value;
+        sayi2=document.getElementById("sayi2").value;
+        sonuc=Number(sayi1)-Number (sayi2);
+        document.getElementById("sonuc").innerHTML=sonuc;
+    }
+    function carp(){
+        sayi1,sayi2,sonuc;
+        sayi1=document.getElementById("sayi1").value;
+        sayi2=document.getElementById("sayi2").value;
+        sonuc=Number(sayi1)*Number (sayi2);
+        document.getElementById("sonuc").innerHTML=sonuc;
+    }
+    function bolme(){
+        sayi1,sayi2,sonuc;
+        sayi1=document.getElementById("sayi1").value;
+        sayi2=document.getElementById("sayi2").value;
+        sonuc=Number(sayi1)/Number (sayi2);
+        document.getElementById("sonuc").innerHTML=sonuc;
+    }
+    
+</script>
+<body>
+    JavaScript
+
+    <div id="kutu1"></div>
+    <input type="text" id="sayi1">
+    <input type="text" id="sayi2">
+    Sonuç:<span id="sonuc"></span>
+    <button onclick="topla()">Topla</button>
+    <button onclick="mesaj()">Mesaj</button>
+    <button onclick="topla2()">Topla</button>
+    <button onclick="topla3()">Topla3</button>
+    <button onclick="cikar()">Çıkar</button>
+    <button onclick="bolme()">Bölme</button>
+    <button onclick="carp()">Çarpma</button>
+</body>
+</html>
